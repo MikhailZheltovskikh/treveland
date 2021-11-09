@@ -16,7 +16,9 @@ li {
 }
 
 body {
-   font-family: 'Gelasio', serif;
+   font-family: "Gelasio", serif;
+   font-size: 18px;
+   font-weight: 400;
 }
 .wrapper {
    display: flex;
@@ -30,8 +32,30 @@ body {
    flex: 0 0 auto;
 }
 .container {
-   // max-width: 1200px;
+   max-width: 1170px;
    margin: 0px auto;
    padding: 0px 15px;
 }
-
+.btn {
+   background-color: #c9453b;
+   border-radius: 5px;
+   color: #fff;
+   padding: 14px 35px;
+   font-weight: 400;
+}
+.text {
+   font-size: 18px;
+   line-height: 160%;
+   color: #000000;
+   opacity: 0.6;
+   font-weight: 400;
+}
+.title {
+   margin-top: 140px;
+   margin-bottom: 20px;
+   font-weight: 500;
+   font-size: 43px;
+   line-height: 140%;
+   color: #000000;
+   text-align: center;
+}

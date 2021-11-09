@@ -1,14 +1,243 @@
 @import "vars";
 @import "fonts";
-@import 'reset';
+@import "reset";
 @import "global";
 
-//start
+//start header
+.header {
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+.header__inner {
+   padding-top: 42px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 200px;
+}
+.menu__list {
+   display: flex;
+   justify-content: space-between;
+   li + li {
+      margin-left: 50px;
+   }
+   a {
+      color: #fff;
+      font-weight: 500;
+   }
+}
+.header__content {
+   &-title {
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 120%;
+      color: #fff;
+      margin-bottom: 30px;
+      max-width: 804px;
+   }
+   &-text {
+      margin-bottom: 40px;
+      max-width: 423px;
+   }
+}
+//end header
+//start popular
+.popular-text,
+.offers__text,
+.blog__text {
+   max-width: 700px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+.popular__inner {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -15px;
+}
+.popular__item {
+   padding: 15px;
+   width: 33.333%;
+}
+.popular__wrapper {
+   &:hover {
+      box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+   }
+}
+.popular__img {
+   display: block;
+}
+.popular__img {
+   max-width: 100%;
+   max-height: 100%;
+}
+.popular__item-box {
+   text-align: center;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-top: none;
+   padding: 35px 27px 33px;
+}
 
-//end
+.popular__item-title {
+   margin-bottom: 10px;
+}
+//end popular
+//start offers
+.offers__text {
+   max-width: 656px;
+}
+//end offers
+//start blog
+.blog__text {
+   max-width: 581px;
+}
+.blog__inner {
+   display: flex;
+   margin-bottom: 140px;
+}
+.blog__inner-left,
+.blog__inner-right {
+   width: 50%;
+}
+.blog__inner-left {
+   margin-right: 30px;
+}
+.blog__left-img {
+   min-height: 397px;
+   margin-bottom: 35px;
+   img {
+      min-width: 100%;
+      min-height: 100%;
+   }
+}
 
-
-
-
+.blog__left-text {
+   margin-bottom: 10px;
+}
+.blog__right-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.blog__right-img {
+   margin-right: 27px;
+}
+.blog__right-title,
+.blog__left-title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   margin-bottom: 5px;
+}
+.blog__left-title {
+   margin-bottom: 10px;
+}
+.blog__right-text {
+   margin-bottom: 10px;
+}
+.blog__right-from,
+.blog__left-from {
+   a {
+      font-size: 20px;
+      line-height: 150%;
+      color: #000000;
+      opacity: 0.8;
+   }
+}
+//end blog
+//start footer
+.footer {
+   background: rgba(38, 148, 153, 0.04);
+   padding: 70px 0;
+}
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__col {
+   a {
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.06em;
+      color: #000000;
+   }
+}
+.footer__col-1 {
+   a {
+      display: block;
+      margin-top: 10px;
+   }
+}
+.footer__logo {
+   margin-bottom: 40px;
+}
+.footer__social-list {
+   margin-top: 40px;
+   li {
+      display: inline-block;
+      & + li {
+         margin-left: 27px;
+      }
+   }
+   a {
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/sprites/css_sprites.png);
+   }
+}
+.link-facebook {
+   background-position: -0 -0;
+}
+.link-instagram {
+   background-position: -20px -20px;
+}
+.link-twitter {
+   background-position: -0 -20px;
+}
+.link-google {
+   background-position: -20px -0;
+}
+.footer__col-2,
+.footer__col-3 {
+   li + li {
+      margin-top: 20px;
+   }
+   a {
+      font-weight: 500;
+   }
+}
+.footer__col-4 {
+   input {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      background-color: transparent;
+      max-width: 200px;
+      padding: 10px 20px;
+      &::placeholder {
+         font-size: 16px;
+         line-height: 150%;
+         letter-spacing: 0.06em;
+         color: #000000;
+      }
+   }
+   button{
+      border: none;
+      margin-left: 35px;
+      cursor: pointer;
+      font-weight: 400;
+   }
+}
+.footer__col-title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   letter-spacing: 0.06em;
+   margin-bottom: 42px;
+}
+//end footer
 
 @import "midia";
